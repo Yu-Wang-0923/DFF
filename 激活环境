@@ -1,0 +1,8 @@
+cd /home/rlwu/YuWangRUC
+source venv/bin/activate
+
+
+cuda
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"使用设备: {device}")
